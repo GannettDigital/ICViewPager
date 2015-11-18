@@ -137,8 +137,6 @@
 @property (nonatomic) NSNumber *fixLatterTabsPositions;
 
 @property (nonatomic) NSUInteger tabCount;
-@property (nonatomic) NSUInteger activeTabIndex;
-@property (nonatomic) NSUInteger activeContentIndex;
 
 @property (getter = isAnimatingToTab, assign) BOOL animatingToTab;
 @property (getter = isDefaultSetupDone, assign) BOOL defaultSetupDone;
