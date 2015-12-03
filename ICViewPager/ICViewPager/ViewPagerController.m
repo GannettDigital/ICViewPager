@@ -122,10 +122,6 @@
 @property UIPageViewController *pageViewController;
 @property (assign) id<UIScrollViewDelegate> actualDelegate;
 
-// Tab and content cache
-@property NSMutableArray *tabs;
-@property NSMutableArray *contents;
-
 // Options
 @property (nonatomic) NSNumber *tabHeight;
 @property (nonatomic) NSNumber *tabOffset;
