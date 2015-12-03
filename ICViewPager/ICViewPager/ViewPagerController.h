@@ -49,6 +49,10 @@ typedef NS_ENUM(NSUInteger, ViewPagerComponent) {
 
 @interface ViewPagerController : UIViewController
 
+// Tab and content cache
+@property (nonatomic) NSMutableArray *tabs;
+@property (nonatomic) NSMutableArray *contents;
+
 @property (nonatomic) NSUInteger activeTabIndex;
 @property (nonatomic) NSUInteger activeContentIndex;
 
