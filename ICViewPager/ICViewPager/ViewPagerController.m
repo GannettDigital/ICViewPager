@@ -85,16 +85,8 @@
     bezierPath = [UIBezierPath bezierPath];
     [bezierPath moveToPoint:CGPointMake(0.0, 0.0)];
     [bezierPath addLineToPoint:CGPointMake(CGRectGetWidth(rect), 0.0)];
-    [[UIColor colorWithWhite:197.0/255.0 alpha:0.75] setStroke];
-    [bezierPath setLineWidth:1.0];
-    [bezierPath stroke];
-    
-    // Draw bottom line
-    bezierPath = [UIBezierPath bezierPath];
-    [bezierPath moveToPoint:CGPointMake(0.0, CGRectGetHeight(rect))];
-    [bezierPath addLineToPoint:CGPointMake(CGRectGetWidth(rect), CGRectGetHeight(rect))];
-    [[UIColor colorWithWhite:197.0/255.0 alpha:0.75] setStroke];
-    [bezierPath setLineWidth:1.0];
+    [[UIColor whiteColor] setStroke];
+    [bezierPath setLineWidth:2.0];
     [bezierPath stroke];
     
     // Draw an indicator line if tab is selected
@@ -103,9 +95,9 @@
         bezierPath = [UIBezierPath bezierPath];
         
         // Draw the indicator
-        [bezierPath moveToPoint:CGPointMake(0.0, CGRectGetHeight(rect) - 1.0)];
-        [bezierPath addLineToPoint:CGPointMake(CGRectGetWidth(rect), CGRectGetHeight(rect) - 1.0)];
-        [bezierPath setLineWidth:8.0];
+        [bezierPath moveToPoint:CGPointMake(12.0f, CGRectGetHeight(rect) - 1.0)];
+        [bezierPath addLineToPoint:CGPointMake(CGRectGetWidth(rect) - 12.0f, CGRectGetHeight(rect) - 1.0)];
+        [bezierPath setLineWidth:4.0];
         [self.indicatorColor setStroke];
         [bezierPath stroke];
     }
