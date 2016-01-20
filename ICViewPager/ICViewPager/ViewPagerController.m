@@ -839,10 +839,6 @@
         [self.view insertSubview:self.contentView atIndex:0];
     }
     
-    // Select starting tab
-    NSUInteger index = [self.startFromSecondTab boolValue] ? 1 : 0;
-    [self selectTabAtIndex:index];
-    
     // Set setup done
     self.defaultSetupDone = YES;
 }
